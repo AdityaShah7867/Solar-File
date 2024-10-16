@@ -25,8 +25,8 @@ void setup() {
   }
   Serial.println();
   Serial.println("Connected to Wi-Fi!");
-  config.host = "test-f5990-default-rtdb.asia-southeast1.firebasedatabase.app"; 
-  config.signer.tokens.legacy_token = "mqfFUNGTv0AuZnDqhR4rJELv6eu18rDE2SOihQyM"; 
+  config.host = "Host id " ;
+  config.signer.tokens.legacy_token = "Legacy tokens" //higher version try to use the web api , if this is depreceated
   Firebase.begin(&config, &auth);
   if (Firebase.ready()) {
     Serial.println("Firebase connected and ready!");
